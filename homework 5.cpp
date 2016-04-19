@@ -204,18 +204,18 @@ void mergesort(int A[], int low, int high){
 }
 int main() {
 	read_file();
-	//bubblesort(numbers,10000);
-	//insertionsort(numbers,10000);
-	//selectionsort(numbers,10);
-	//quicksort(numbers,0,9999);
-	//shell_sort(numbers,10000);
+	bubblesort(numbers,10000);
+	insertionsort(numbers,10000);
+	selectionsort(numbers,10);
+	quicksort(numbers,0,9999);
+	shell_sort(numbers,10000);
 	mergesort(numbers,0,9999);
 	/*for(int k =0;k<10;k++){
 		cout<<numbers[k]<<" ";
 	}*/
 	cout<<"mcomp"<<mcomp<<"\n";
 	cout<<"mswap"<<mswap<<"\n";
-	//cout<<"qcomp"<<qcomp<<"\n";
-	//cout<<"qswap"<<qswap<<"\n";
+	cout<<"qcomp"<<qcomp<<"\n";
+	cout<<"qswap"<<qswap<<"\n";
 	return 0;
 }
