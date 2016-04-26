@@ -83,7 +83,11 @@ int write_file(int *& hash_table,int M){//writes hash table to file.
 	out.open("hashed_socials.txt");
 
 	for(int i =0; i<M; i++){
-		out<<hash_table[i]<<endl;
+		if(M-1==i){
+			cout<<hash_table[i];
+		}else{
+			out<<hash_table[i]<<",";
+		}
 	}
 	out.close();
 	return 0;
